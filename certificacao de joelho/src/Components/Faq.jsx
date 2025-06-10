@@ -33,7 +33,8 @@ const faqItems = [
 ];
 
 // Componente FAQ com lista de perguntas
-const Faq = () => {
+// Agora recebe a prop onScrollToCheckout para o botão final
+const Faq = ({ onScrollToCheckout }) => { // Adicione onScrollToCheckout aqui
   return (
     <section className="bg-black text-white py-20 px-4">
       {/* Container central com largura máxima */}
@@ -53,7 +54,10 @@ const Faq = () => {
 
         {/* Botão final */}
         <div className="text-center pt-6">
-          <button className="bg-[#D00727] hover:bg-[#b9061f] text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+          <button
+            onClick={onScrollToCheckout} // Adicione o onClick para chamar a função de scroll
+            className="bg-[#D00727] hover:bg-[#b9061f] text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+          >
             GARANTIR MINHA CERTIFICAÇÃO
           </button>
         </div>
