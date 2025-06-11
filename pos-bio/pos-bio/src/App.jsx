@@ -4,6 +4,13 @@ import HeroSection from './components/HeroSection'; // Ajuste o caminho se neces
 import Especialistas from './components/Especialistas';
 import ReconhecimentoMEC from './components/ReconhecimentoMEC';
 import SistemaCicloAprendizado from './components/SistemaCicloAprendizado';
+import PublicoAlvo from './components/PublicoAlvo';
+import Modulos from './components/Modulos';
+import MarketplaceSection from './components/MarketplaceSection';
+import TestimonialsSection from './components/TestimonialsSection';
+import FAQSection from './components/FAQSection';
+import Footer from './components/Footer';
+
 
 
 function App() {
@@ -13,7 +20,12 @@ function App() {
       <Especialistas />
       <ReconhecimentoMEC />
       <SistemaCicloAprendizado />
-      
+      <PublicoAlvo />
+      <Modulos />
+      <MarketplaceSection />
+      <TestimonialsSection />
+      <FAQSection />
+      <Footer />
       
     </div>
   );
